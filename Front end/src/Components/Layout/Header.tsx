@@ -110,7 +110,7 @@ function Header() {
                   Home
                 </NavLink>
               </li>
-              {
+              {/* {
                 <li className="nav-item dropdown" style={liStyle}>
                   <a
                     className="nav-link dropdown-toggle"
@@ -149,7 +149,7 @@ function Header() {
                     </li>
                   </ul>
                 </li>
-              }
+              } */}
               {
                 <li className="nav-item" style={{ marginRight: "20px" }}>
                   <a className="nav-link" href="#">
