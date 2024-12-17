@@ -26,6 +26,7 @@ pipeline {
             }
         }
     }
+    
         stage('Login to Docker Hub') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', 
@@ -36,6 +37,7 @@ pipeline {
                 }
             }
         }
+
         stage('Build Backend Image') {
             steps {
                 echo 'Building Backend Docker Image...'

@@ -8,7 +8,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-
 # Sao chép toàn bộ mã nguồn vào container
 COPY . .
 
@@ -18,7 +17,7 @@ ENV PORT=3001
 # Build static files (nếu production)
 RUN npm run build
 
-# Expose cổng frontend (3000)
+# Expose cổng frontend (3001)
 EXPOSE 3001
 
 # Chạy ứng dụng frontend
