@@ -18,28 +18,14 @@ pipeline {
             script {
                 echo 'Checking Docker status...'
                 def dockerStatus = bat(script: 'docker info >nul 2>&1', returnStatus: true)
-
                 if (dockerStatus != 0) {
-                    echo 'Docker is not running. Starting Docker...'
-                    // Tự động khởi chạy Docker trên Windows (Docker Desktop)
-                    bat 'start "" "C:\\Program Files\\Docker\\Docker\\Docker Desktop.exe"'
-                    sleep(time: 30, unit: 'SECONDS') // Chờ 20 giây để Docker khởi động
-
-                    echo 'Rechecking Docker status...'
-                    dockerStatus = bat(script: 'docker info >nul 2>&1', returnStatus: true)
-
-                    if (dockerStatus != 0) {
-                        error 'Failed to start Docker. Please check Docker installation.'
-                    } else {
-                        echo 'Docker is now running.'
-                    }
+                    error 'Docker is not running. Please start Docker and retry the pipeline.'
                 } else {
                     echo 'Docker is already running.'
                 }
             }
         }
     }
-
         stage('Login to Docker Hub') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', 
