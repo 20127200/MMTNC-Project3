@@ -110,49 +110,53 @@ function Header() {
                   Home
                 </NavLink>
               </li>
-              {/* <li className="nav-item dropdown" style={liStyle}>
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Menu
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Cake 1
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Cake 2
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Cake 3
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Cake 4
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Cake 5
-                    </a>
-                  </li>
-                </ul>
-              </li> */}
-              {/* <li className="nav-item" style={{ marginRight: "20px" }}>
-                <a className="nav-link" href="#">
-                  About us
-                </a>
-              </li> */}
+              {
+                <li className="nav-item dropdown" style={liStyle}>
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Menu
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Cake 1
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Cake 2
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Cake 3
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Cake 4
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Cake 5
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              }
+              {
+                <li className="nav-item" style={{ marginRight: "20px" }}>
+                  <a className="nav-link" href="#">
+                    About us
+                  </a>
+                </li>
+              }
             </ul>
             <form
               className="d-flex"
