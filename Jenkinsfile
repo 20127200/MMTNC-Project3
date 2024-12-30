@@ -9,7 +9,8 @@ pipeline {
         stage('Clone Code') {
             steps {
                 echo 'Cloning code from GitHub...'
-                git branch: 'main', url: 'https://github.com/20127200/MMTNC-Project3.git'
+                //git branch: 'main', url: 'https://github.com/20127200/MMTNC-Project3.git'
+                bat 'https://github.com/20127200/MMTNC-Project3.git'
             }
         }
         
