@@ -138,7 +138,7 @@ function MenuItemCard({ menuItem }: Props) {
             </Link>
           </div>
           <i
-            className="bi bi-clock btn btn-danger"
+            className="bi bi-clock btn btn-success"
             style={{
               position: "absolute",
               top: "15px",
